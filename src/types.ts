@@ -9,6 +9,20 @@ export interface Product {
   badge?: string;
   volume?: string;
   scentNotes?: string[];
+  imageUrl?: string;
+}
+
+export interface CartItem {
+  product: Product;
+  quantity: number;
+}
+
+export interface CustomerOrderDetails {
+  fullName: string;
+  phone: string;
+  deliveryAddress: string;
+  cityState: string;
+  notes?: string;
 }
 
 export interface Review {
